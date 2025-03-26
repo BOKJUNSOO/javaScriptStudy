@@ -1,0 +1,17 @@
+<script>
+    let globalScope = 'global name';
+    {
+        let name = 'javascript';
+        console.log(name);
+        name = 'hello';
+        console.log(name);
+        name = "work";
+        console.log(name);
+        hi= "hi";
+        hi="bye";
+        console.log(hi);
+    }
+    console.log(name); // 아무것도 출력하지 않는다.
+    console.log(globalScope);
+
+</script>
