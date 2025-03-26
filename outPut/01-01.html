@@ -1,0 +1,48 @@
+<!-- html파일의 script 태그 내에서 함수 정의하기.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">text</p>
+    <!--button 을 누르면 change 함수를 실행한다.-->
+    <button type="button" onclick="changeToHello()">change</button>
+    <button type="button" onclick="warningMessage()">Don`t press this button</button>
+    <button type="button" onclick="changeBody()">Change Body</button>
+    <button type="button" onclick="writeConsole()">console 창에 메세지를 작성합니다.</button>
+    <button type="button" onclick="printPage()">
+        <img src="data:image/jpeg;base64,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">
+    </button>
+    <script>
+        // 자바스크립트 문법 적용
+        function changeToHello() {
+            // CSS 선택자에 맞는 첫 번째 요소를 선택
+            // id가 demo인 요소를 선택해서 문자열 변환
+            document.querySelector("#demo").innerHTML = "Hello";
+        }
+
+        /* 경고창에 출력 */
+        function warningMessage(){
+            window.alert("This is warning Message");
+        }
+        
+        /* body의 내용일 바뀐다. */
+        function changeBody(){
+            document.write("body 내용이 바뀌었습니다.");
+        }
+        
+        /* 개발자 도구 콘솔창에 쓰기*/
+        function writeConsole(){
+            console.log("hello world");
+        }
+
+        /* 페이지 프린터로 연결 */
+        function printPage(){
+            window.print()
+        }
+    </script>
+</body>
+</html>
