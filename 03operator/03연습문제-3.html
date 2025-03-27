@@ -7,15 +7,12 @@
 </head>
 <body>
     <script>
-        let num = 456;
-        let stack;
-        stack = num.toString();
-        let length_ = stack.length;
-        length_ -= 1
+        let num = 4563;
+        let length_ = num.toString().length - 1;
+        let answer = 0
         let i;
-        answer = 0
-        for(i=length_;i>=0;i--) {
-            mod_ = 10 ** length_;
+        for(i=length_; i>=0; i--) {
+            let mod_ = 10 ** length_;
             answer += parseInt(num / mod_);
             num -= (parseInt(num / mod_) * mod_);
             length_ -=1;
