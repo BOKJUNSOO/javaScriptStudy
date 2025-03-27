@@ -114,3 +114,18 @@ const title = '제목';
 title = '제목수정';
 console.log(title); // TypeError
 ```
+
+### `hoisting`
+`var` 과 같은 키워드로 선언된 변수는 선언문을 먼저 실행하여 문제가 생겼다. (할당되지 않은 변수가 `undefined`로 출력된다.)
+
+또한 `let` 으로 변수를 선언 및 할당한 경우에 먼저 초기화 전에 해당 변수를 호출하면 컴파일러가 에러를 발생시킨다.
+
+하지만 함수의 경우 컴파일러가 작동하는 과정에서 호출 시점에 함수를 스택에 추가하여 에러를 발생시키지 않는다.
+
+```JavaScript
+example()
+
+fuction exampe(){
+    console.log("this is okay")
+}
+```
