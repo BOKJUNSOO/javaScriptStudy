@@ -41,7 +41,10 @@ const char = 'c';
 const username = 'junesoo';
 
 const greeting = 'hello' + username;
-console.log('value : ' ${greeting}, 'type :' ${typeof greeting}); // bash 문법과 비슷하다
+
+// bash 문법과 비슷하다
+// 백틱으로 감싸준다면 f-string과 비슷하게 사용할 수 있다.
+console.log(`value : ${greeting}, type : ${typeof greeting}`); 
 ```
 
 - 인덱스로 접근이 가능하고, 문자열 splice 연산을 제공한다
@@ -54,7 +57,7 @@ console.log(str[str.length-1]);
 
 // splice 연산
 console.log(str.substring(0,4));
-console.log(str.slic(-6,str.length));
+console.log(str.slice(-6,str.length));
 
 // 문자열 탐색 연산
 console.log(str.indexOf('S'));
@@ -69,11 +72,25 @@ cosole.log(str.includes("v")); // bool type 리턴
 console.log(str.split('S')); // Java,cript
 ```
 
+`boolen`
+
+false : 0, null, undefined, NaN
+
+true : not true
+
 ### 2. `Reference`
 primative 들을 관리하는 타입이다.
 
 - `{} , [] , class`
 
-### 3. `Function`
-JavaScript에서는 함수를 `일급객체` 로 다룬다.
-함수를 다른 변수와 같이 동일하게 다룰 수 있다. 
+- `const` 로 선언된 객체도 `key` 값으로 접근해 초기화가 가능하다!
+
+```JavaScript
+const user = {name : 'developer', age : 0};
+user.age = 29;
+console.log(user); // {name : 'developer', age : 29}
+
+const arr_ = [1,2,3] // 배열 선언
+arr_[4] = 7
+console.log(arr_) // 길이가 5로 바뀌는 dynamic array..
+```
