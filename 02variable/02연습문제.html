@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let food1 = prompt('첫번째 음식의 금액'); // 사용자 표준입력을 받을 수 있다
+        let food2 = prompt('두번째 음식의 금액');
+        let cnt = prompt("나누어 낼 인원 수를 입력해주세요.");
+        
+        let price = 0;
+        let nPrice = 0;
+        
+        // stdin buffer string to Number
+        food1 = Number(food1);
+        food2 = Number(food2);
+        price = food1 + food2;
+        nPrice = price / cnt;
+
+        console.log(`전체금액 : ${price}, 인원 수 :${cnt}`);
+        console.log(`1/n 금액 : ${nPrice}`);
+    </script>
+</body>
+</html>
