@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+        let check = 0;
+        while (true) {
+            if (check == 101){
+                break;
+            }
+            if (check % 2 == 0){
+                total += check;
+                check +=1;
+            } else {
+                check +=1;
+            }
+        }
+        console.log(`2의 배수 합 => ${total}`)
+    </script>
+</body>
+</html>

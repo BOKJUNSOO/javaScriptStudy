@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = 60;
+        let hasPortfolio = true;
+        let isPass = true;
+        let cond = hasPortfolio === true || isPass==true;
+        // && 가 || 보다 우선순위가 높다는 것에 유의
+        if (score >= 60 && cond) {
+            console.log('채용');
+        } else {
+            console.log('탈락');
+        }
+    </script>
+</body>
+</html>

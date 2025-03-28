@@ -1,0 +1,23 @@
+<script>
+const map = ['가위','바위','보'];
+
+// 1미만의 양수값이 주어진다
+const player = 1;
+const com = parseInt(Math.random() * 3);
+console.log(`player: ${map[player]}, com: ${map[com]}`);
+
+let result = '';
+function getResult() {
+    if (player == com ) {
+        result = '무승부';
+    } else if (com == 0){
+        result = 'player 승';
+    } else if (com == 2){
+        result = 'com 승';
+    }
+    return result;
+}
+    
+getResult()
+console.log(`결과 : ${result}`);
+</script>
