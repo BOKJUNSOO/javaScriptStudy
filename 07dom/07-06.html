@@ -1,0 +1,13 @@
+<body>
+    <img src="https://i.namu.wiki/i/d1A_wD4kuLHmOOFqJdVlOXVt1TWA9NfNt_HA0CS0Y_N0zayUAX8olMuv7odG2FiDLDQZIRBqbPQwBSArXfEJlQ.webp" alt="">
+</body>
+<script>
+    const imgs = document.querySelectorAll('img');
+    // 기본 이벤트 막기
+    imgs.forEach((img) => {
+        // event 인자를 입력
+        img.addEventListener('contextmenu', (event) => {
+            event.preventDefault();
+        });
+    });
+</script>

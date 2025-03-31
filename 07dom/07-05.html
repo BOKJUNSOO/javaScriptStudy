@@ -1,0 +1,17 @@
+<body>
+    <h3>글자 수 : 0</h3>
+    <input type="text" name="title" id="title">
+</body>
+<script>
+    const h3 = document.querySelector('h3');
+    const input = document.querySelector('input');
+
+    // 키보드 이벤트
+        // 눌렀던 키를 떨어질 때 실행 : keyup
+        // 키가 입력되었을 때 실행 : keypress
+        // 눌렀던 키를 떨어질 때 실행 : keyup
+    input.addEventListener('keypress', function (event) {
+        const length = input.value.length;
+        h3.textContent = `글자 수 : ${length}`;
+    });
+</script>

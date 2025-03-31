@@ -1,0 +1,21 @@
+<body>
+    <h1>제목</h1>
+    <h3>
+        클릭 횟수: 0
+    </h3>
+</body>
+<script>
+    /* 마웃 드래그 방지 이벤트 */
+    document.body.onselectstart = () => False;
+    let count = 0;
+
+    // 태그 객체를 일단 변수에 저장
+    const h1 = document.querySelector('h1');
+    const h3 = document.querySelector('h3');
+
+    h1.addEventListener('click' ,() => {
+        count +=1;
+        // 해당 태그의 text 조정 (textContent는 string을 리턴한다)
+        h3.textContent = `클릭 횟수 : ${count}`;
+    });
+</script>

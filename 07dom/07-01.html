@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // h1 객체를 클릭했을때 (event)
+        const h = document.querySelector('h1'); // 객체 선택
+        h.addEventListner('click', () => {
+            h.style.backgroudColor = 'red';
+        });
+
+        window.addEventListener('resize', () => {
+            console.log('resize');
+        });
+    </script>
+    <h1>2번째 h2 태그</h1>
+</body>
+
+</html>

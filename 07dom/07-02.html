@@ -1,0 +1,13 @@
+<body>
+    <script>
+        const h1 = document.createElement('h1'); // element node 생성
+        const text = document.createTextNode("제목") // text node 생성
+        
+        h1.appendChild(text);
+        document.body.appendChild(h1); // body 객체에 추가
+
+        // += 기호를 쓰지 않으면 그대로 초기화 시킨다.
+        // React에서 보통 쓰는 방식
+        document.body.innerHTML += '<h1>제목2</h1>' // HTML 을 직접 작성하면서 추가
+    </script>
+</body>
